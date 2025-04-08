@@ -1,5 +1,8 @@
 # Goals in Lab2
 
+## GPU info query
+`sbatch GPU_INFO_QUERY.sh` gives you the results of `nvidia-smi`, `nvidia-smi -q` and `deviceQuery`.
+
 ## CUDA Programming
 
 By using command `make filename` in each Task folder, it can automatically compile the file. 
