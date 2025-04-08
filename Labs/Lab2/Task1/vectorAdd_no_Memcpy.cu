@@ -33,13 +33,13 @@ int main(void) {
     }
 
     // TODO: Allocate memory on the GPU
-    
+
 
     // TODO: Copy the vectors from the host to the GPU
     
 
-    // Launch the kernel function with one block and numElements threads
-    vectorAdd<<<1, numElements>>>(d_A, d_B, d_C, numElements);
+    // TODO: Make it use the correct memory pointers
+    vectorAdd<<<1, numElements>>>(h_A, h_B, h_C, numElements);
 
     // Synchronize the device to ensure all threads have completed
     cudaDeviceSynchronize();
@@ -57,10 +57,8 @@ int main(void) {
         }
     }
 
-    // Free GPU memory
-    cudaFree(d_A);
-    cudaFree(d_B);
-    cudaFree(d_C);
+    // TODO: Free GPU memory
+    
 
     // Free host memory
     free(h_A);
