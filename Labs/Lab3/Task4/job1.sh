@@ -6,4 +6,4 @@
 
 module load cuda12.3/toolkit
 
-./NaiveMatrixMul 4096
+./NaiveMatrixMul 1024
