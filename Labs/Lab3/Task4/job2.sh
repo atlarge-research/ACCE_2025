@@ -6,4 +6,4 @@
 
 module load cuda12.3/toolkit
 
-./TiledMatrixMul 4096
+./TiledMatrixMul 1024
